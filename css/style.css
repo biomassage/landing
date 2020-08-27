@@ -65,6 +65,7 @@ h6 {
 }
 
 .back-to-top i {
+  display: block;
   padding-top: 12px;
   color: #fff;
 }
