@@ -18,7 +18,7 @@
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <!-- <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -61,11 +61,21 @@
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#intro">Главная</a></li>
-          <li><a href="#why-us">Про биомассаж</a></li>
-          <li><a href="#services">Услуги</a></li>
-          <li><a href="#about">Обо мне</a></li>
-          <li><a href="#footer">Контакты</a></li>
+          <li class="active" data="lng-txt"><a href="#intro">Главная</a></li>
+          <li><a href="#why-us" data="lng-txt">Про биомассаж</a></li>
+          <li><a href="#services" data="lng-txt">Услуги</a></li>
+          <li><a href="#about" data="lng-txt">Обо мне</a></li>
+          <li><a href="#footer" data="lng-txt">Контакты</a></li>
+          <li>
+            <div class="lang_pop"><span>Рус</span>
+              <div class="content">
+                <div class="up_arrow"></div>
+                <div class="selector">
+                  <ul></ul>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -399,9 +409,9 @@
               <!-- <h3>BIOMassage</h3> -->
               <p>
                 <h4>
-                  Телефон: +38(099)750-00-63<br>
-                  <br>
-                  Адрес: м.Київ, вул.Медитаційна 1а, оф.1<br>
+                  Телефон: <a href="tel:+38(099)750-00-63" target="_blank">+38(099)750-00-63</a><br>
+                  <br>Email: <a href="mailto:biomassageua@gmail.com" target="_blank" style=" text-transform: lowercase;">biomassageua@gmail.com</a><br>
+                  <br>Адрес: м.Київ, вул.Медитаційна 1а, оф.1<br>
                 </h4>
               </p>
               <p>
@@ -443,10 +453,11 @@
                   <div class="validation"></div>
                 </div>
 
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
+                <div id="sendmessage">Ваше сообщение отправлено! Спасибо.</div>
+                <div id="errormessage">Ошибка отправки!</div>
 
                 <div class="text-center"><button type="submit" title="Send Message">Отправить</button></div>
+                <input name="apikey" value="(U&RBwj{7ws{uH52S&5=UU3AH:MTrf>_JVtU2HDjn_" type="hidden">
               </form>
             </div>
 
@@ -472,7 +483,7 @@
 
   <a href="#" class="back-to-top"><i class="ion-chevron-up"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
+  <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -482,7 +493,7 @@
   <script src="lib/mobile-nav/mobile-nav.js"></script>
   <script src="lib/wow/wow.min.js"></script>
   <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
+  <!-- <script src="lib/counterup/counterup.min.js"></script> -->
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
