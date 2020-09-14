@@ -279,7 +279,8 @@ h6 {
   float: left;
 }
 
-.main-nav a {
+.main-nav a,
+.main-nav span {
   display: block;
   position: relative;
   color: #8A6D43;
@@ -291,9 +292,14 @@ h6 {
   font-weight: 600;
 }
 
+.main-nav span {
+  cursor: pointer;
+}
+
 .main-nav a:hover,
 .main-nav .active > a,
-.main-nav li:hover > a {
+.main-nav li:hover > a,
+.main-nav span:hover {
   color: #E18626;
   text-decoration: none;
 }
@@ -312,7 +318,8 @@ h6 {
   transition: ease all 0.3s;
 }
 
-.main-nav .drop-down:hover > ul {
+.main-nav .drop-down:hover > ul,
+.main-nav .lang_pop:hover > .content .selector ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -323,7 +330,8 @@ h6 {
   position: relative;
 }
 
-.main-nav .drop-down ul a {
+.main-nav .drop-down ul a,
+.main-nav .drop-down ul li {
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 500;
@@ -333,8 +341,10 @@ h6 {
 
 .main-nav .drop-down ul a:hover,
 .main-nav .drop-down ul .active > a,
-.main-nav .drop-down ul li:hover > a {
+.main-nav .drop-down ul li:hover > a,
+.main-nav .drop-down ul li:hover {
   color: #E18626;
+  cursor: pointer;
 }
 
 .main-nav .drop-down > a:after {
