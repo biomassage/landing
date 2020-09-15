@@ -20,7 +20,7 @@ function ch_site_lang(lng='ru') {
     $('[data=lng-txt]').each(function() {
       // var lang_content = $.trim($(this).text().toLowerCase());
       var lang_content = $(this).text().replace(/\s+/g, ' ').trim().toLowerCase();
-      console.log(lang_content);
+      // console.log(lang_content);
       $(this).html(data[lng][lang_content]);
     });
 
