@@ -8,6 +8,13 @@
         $(this).remove();
       });
     }
+
+    // add form fiels language translate
+    if($.cookie("country")=="UA") {
+      $(".contactForm #name").attr("placeholder", "Ваше ім'я");
+      $(".contactForm textarea").attr("placeholder", "Задайте питання, або запишіться на процедуру.");
+      $(".contactForm textarea").attr("data-msg", "Задайте питання, або запишіться на процедуру.");
+    }
   });
 
   // Back to top button
